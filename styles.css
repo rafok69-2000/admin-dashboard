@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'latoregular';
+    src: url('fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: latoregular;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: #41ACF0;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 40px 1fr;  
+    color: white;
+    row-gap: 20px;
+    column-gap: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.logo{
+   align-self: center;
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    grid-template-rows: repeat(10, 35px);
+    gap: 10px;
+    padding-left: 10px ;
+}
+
+.links svg{
+    width: 25px;
+    height: auto;
+    align-self: center;
+    fill: white;
+}
+
+li {
+   list-style-type: none;
+   align-self: center;
+   font-size: 18px
+}
+
+li:hover{
+    color: lightblue;
+}
+
+.header {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: black;
+}
+
+
