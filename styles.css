@@ -184,5 +184,66 @@ li:hover{
     font-size: 16px;
 }
 
+.main {
+    display: grid;
+    grid-template-columns: 2fr 250px;
+    grid-template-rows: 50px 1fr;
+    gap: 20px;
+    overflow-y: auto;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    background-color: #eef2f7;
+}
 
+.main-title {
+    align-self: end;
+    font-weight: bold;
+    font-size: 18px;
+}
 
+.cards {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 7px;
+    padding: 25px;
+    gap: 5px;
+    background-color: white;
+}
+
+.card span {
+    font-weight: bold;
+}
+
+.accent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    height: 100%;
+    background-color: #f6b241;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    gap: 30px;
+    margin-top:40px;
+}
+
+.icons svg {
+   width: 25px;
+   height: auto;
+}
