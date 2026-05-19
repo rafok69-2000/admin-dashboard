@@ -99,7 +99,7 @@ li:hover{
     padding: 12px 12px;
     border-radius: 20px;
     border: 1px solid lightgray;
-    background-color: lightgrey;
+    background-color: lightgray;
 }
 
 .search input:focus {
@@ -121,8 +121,8 @@ li:hover{
 }
 
 .notifications img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -145,8 +145,8 @@ li:hover{
 }
 
 .welcome img {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -223,6 +223,10 @@ li:hover{
     font-weight: bold;
 }
 
+.card-info {
+    color: gray;
+}
+
 .accent {
     position: absolute;
     left: 0;
@@ -246,4 +250,67 @@ li:hover{
 .icons svg {
    width: 25px;
    height: auto;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.announcements span {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.announcements div {
+    font-size: 12px;
+    padding-bottom: 10px;
+    color: gray;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    row-gap: 20px;
+    border-radius: 7px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background-color: white;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.trending img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    justify-self: center;
+}
+
+.user-info {
+    justify-self: start;
+    align-self: center;
+}
+
+.user-info span {
+    font-weight: bold;
+}
+
+.user-info p {
+    color: gray;
 }
